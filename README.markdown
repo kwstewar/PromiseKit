@@ -1,23 +1,25 @@
-![PromiseKit](http://methylblue.com/junk/PMKBanner.png)
+![PromiseKit](http://promisekit.org/public/img/logo-500.png)
 
 Modern development is highly asynchronous: isn’t it about time we had tools that made programming asynchronously powerful, easy and delightful?
 
 ```swift
-UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-
-when(fetchImage(), getLocation()).then { image, location in
+firstly {
+    UIApplication.shared().networkActivityIndicatorVisible = true
+}.then {
+    when(fetchImage(), getLocation())
+}.then { image, location in
     self.imageView.image = image;
     self.label.text = "Buy your cat a house in \(location)"
 }.always {
-    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-}.error { error in
-    UIAlertView(…).show()
+    UIApplication.shared().networkActivityIndicatorVisible = false
+}.catch { error in
+    UIAlertView(/*…*/).show()
 }
 ```
 
-PromiseKit is a thoughtful and complete implementation of promises for iOS and OS X with first-class support for **both** Objective-C *and* Swift.
+PromiseKit is a thoughtful and complete implementation of promises for iOS and macOS with first-class support for **both** Objective-C *and* Swift.
 
-[![Join the chat at https://gitter.im/mxcl/PromiseKit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mxcl/PromiseKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) ![](https://img.shields.io/cocoapods/v/PromiseKit.svg?label=Current%20Release)  [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
+![](https://img.shields.io/cocoapods/v/PromiseKit.svg?label=Current%20Release)  [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
 [![codebeat](https://codebeat.co/badges/6a2fc7b4-cc8f-4865-a81d-644edd38c662)](https://codebeat.co/projects/github-com-mxcl-promisekit)
 [![Build Status](https://travis-ci.org/mxcl/PromiseKit.svg?branch=master)](https://travis-ci.org/mxcl/PromiseKit)
 
@@ -25,10 +27,10 @@ PromiseKit is a thoughtful and complete implementation of promises for iOS and O
 
 ```ruby
 #CocoaPods
-pod "PromiseKit", "~> 3.4"
+pod "PromiseKit", "~> 4.0"
 
 #Carthage
-github "mxcl/PromiseKit" ~> 3.4
+github "mxcl/PromiseKit" ~> 4.0
 ```
 
 Alternatively, clone PromiseKit and drag and drop its `xcodeproj` into your Xcode project.
@@ -53,7 +55,7 @@ PromiseKit 1 is pure Objective-C and thus works with all Xcodes, it is also your
 
 ---
 
-We maintain some branches to aid migrating between Swift versions:
+We also maintain some branches to aid migrating between Swift versions:
 
 | Xcode | Swift | PromiseKit | Branch |
 | ----- | ----- | -----------| ---------------- |
@@ -64,16 +66,9 @@ We maintain some branches to aid migrating between Swift versions:
 
 We do **not** backport fixes (mostly) to these migration-branches.
 
-
 # Support
 
-PromiseKit is lucky enough to have a large community behind it which is reflected in our [Gitter chat](https://gitter.im/mxcl/PromiseKit). If you're new to PromiseKit and are stumped or otherwise have a question that doesn't feel like an issue (and isn't answered in our [documentation](http://promisekit.org/introduction)) then our Gitter is a great place to go for help. Of course if you're onto something that you believe is broken or could be improved then opening a new issue is still the way to go 👍.
-
-
-# Donations
-
-PromiseKit is hundreds of hours of work almost completely by just me: [Max Howell](https://twitter.com/mxcl). I thoroughly enjoyed making PromiseKit, but nevertheless if you have found it useful then your bitcoin will give me a warm fuzzy feeling from my head right down to my toes: 1JDbV5zuym3jFw4kBCc5Z758maUD8e4dKR.
-
+PromiseKit is lucky enough to have a large community behind it which is reflected in our [Gitter chat](https://gitter.im/mxcl/PromiseKit). If you’re new to PromiseKit and are stumped or otherwise have a question that doesn't feel like an issue (and isn't answered in our [FAQ](http://promisekit.org/FAQ)) then our Gitter is a great place to go for help. Of course if you're onto something that you believe is broken or could be improved then opening a new issue is still the way to go 👍.
 
 # License
 

@@ -11,90 +11,66 @@ import PromiseKit
  
  And then in your sources:
 
-    #import <PromiseKit/PromiseKit.h>
+    @import PromiseKit;
 */
 extension CKDatabase {
-    public func fetchRecordWithID(recordID: CKRecordID) -> Promise<CKRecord> {
-        #if swift(>=2.3)
-            return Promise { fetch(withRecordID: recordID, completionHandler: $0) }
-        #else
-            return Promise { fetchRecordWithID(recordID, completionHandler: $0) }
-        #endif
+    public func fetchRecordWithID(_ recordID: CKRecordID) -> Promise<CKRecord> {
+        return Promise.wrap { fetch(withRecordID: recordID, completionHandler: $0) }
     }
 
-    public func fetchRecordZoneWithID(recordZoneID: CKRecordZoneID) -> Promise<CKRecordZone> {
-        #if swift(>=2.3)
-            return Promise { fetch(withRecordZoneID: recordZoneID, completionHandler: $0) }
-        #else
-            return Promise { fetchRecordZoneWithID(recordZoneID, completionHandler: $0) }
-        #endif
+    public func fetchRecordZoneWithID(_ recordZoneID: CKRecordZoneID) -> Promise<CKRecordZone> {
+        return Promise.wrap { fetch(withRecordZoneID: recordZoneID, completionHandler: $0) }
     }
 
-    public func fetchSubscriptionWithID(subscriptionID: String) -> Promise<CKSubscription> {
-        #if swift(>=2.3)
-            return Promise { fetch(withSubscriptionID: subscriptionID, completionHandler: $0) }
-        #else
-            return Promise { fetchSubscriptionWithID(subscriptionID, completionHandler: $0) }
-        #endif
+    public func fetchSubscriptionWithID(_ subscriptionID: String) -> Promise<CKSubscription> {
+        return Promise.wrap { fetch(withSubscriptionID: subscriptionID, completionHandler: $0) }
     }
 
     public func fetchAllRecordZones() -> Promise<[CKRecordZone]> {
-        return Promise { fetchAllRecordZonesWithCompletionHandler($0) }
+        return Promise.wrap { fetchAllRecordZones(completionHandler: $0) }
     }
 
     public func fetchAllSubscriptions() -> Promise<[CKSubscription]> {
-        return Promise { fetchAllSubscriptionsWithCompletionHandler($0) }
+        return Promise.wrap { fetchAllSubscriptions(completionHandler: $0) }
     }
 
-    public func save(record: CKRecord) -> Promise<CKRecord> {
-        return Promise { saveRecord(record, completionHandler: $0) }
+    public func save(_ record: CKRecord) -> Promise<CKRecord> {
+        return Promise.wrap { save(record, completionHandler: $0) }
     }
 
-    public func save(recordZone: CKRecordZone) -> Promise<CKRecordZone> {
-        return Promise { saveRecordZone(recordZone, completionHandler: $0) }
+    public func save(_ recordZone: CKRecordZone) -> Promise<CKRecordZone> {
+        return Promise.wrap { save(recordZone, completionHandler: $0) }
     }
 
-    public func save(subscription: CKSubscription) -> Promise<CKSubscription> {
-        return Promise { saveSubscription(subscription, completionHandler: $0) }
+    public func save(_ subscription: CKSubscription) -> Promise<CKSubscription> {
+        return Promise.wrap { save(subscription, completionHandler: $0) }
     }
 
-    public func deleteRecordWithID(recordID: CKRecordID) -> Promise<CKRecordID> {
-        #if swift(>=2.3)
-            return Promise { delete(withRecordID: recordID, completionHandler: $0) }
-        #else
-            return Promise { deleteRecordWithID(recordID, completionHandler: $0) }
-        #endif
+    public func deleteRecordWithID(_ recordID: CKRecordID) -> Promise<CKRecordID> {
+        return Promise.wrap { delete(withRecordID: recordID, completionHandler: $0) }
     }
 
-    public func deleteRecordZoneWithID(zoneID: CKRecordZoneID) -> Promise<CKRecordZoneID> {
-        #if swift(>=2.3)
-            return Promise { delete(withRecordZoneID: zoneID, completionHandler: $0) }
-        #else
-            return Promise { deleteRecordZoneWithID(zoneID, completionHandler: $0) }
-        #endif
+    public func deleteRecordZoneWithID(_ zoneID: CKRecordZoneID) -> Promise<CKRecordZoneID> {
+        return Promise.wrap { delete(withRecordZoneID: zoneID, completionHandler: $0) }
     }
 
-    public func deleteSubscriptionWithID(subscriptionID: String) -> Promise<String> {
-        #if swift(>=2.3)
-            return Promise { delete(withSubscriptionID: subscriptionID, completionHandler: $0) }
-        #else
-            return Promise { deleteSubscriptionWithID(subscriptionID, completionHandler: $0) }
-        #endif
+    public func deleteSubscriptionWithID(_ subscriptionID: String) -> Promise<String> {
+        return Promise.wrap { delete(withSubscriptionID: subscriptionID, completionHandler: $0) }
     }
 
-    public func performQuery(query: CKQuery, inZoneWithID zoneID: CKRecordZoneID? = nil) -> Promise<[CKRecord]> {
-        return Promise { performQuery(query, inZoneWithID: zoneID, completionHandler: $0) }
+    public func performQuery(_ query: CKQuery, inZoneWithID zoneID: CKRecordZoneID? = nil) -> Promise<[CKRecord]> {
+        return Promise.wrap { perform(query, inZoneWith: zoneID, completionHandler: $0) }
     }
 
-    public func performQuery(query: CKQuery, inZoneWithID zoneID: CKRecordZoneID? = nil) -> Promise<CKRecord?> {
-        return Promise { resolve in
-            performQuery(query, inZoneWithID: zoneID) { records, error in
+    public func performQuery(_ query: CKQuery, inZoneWithID zoneID: CKRecordZoneID? = nil) -> Promise<CKRecord?> {
+        return Promise.wrap { resolve in
+            perform(query, inZoneWith: zoneID) { records, error in
                 resolve(records?.first, error)
             }
         }
     }
 
-    public func fetchUserRecord(container: CKContainer = CKContainer.defaultContainer()) -> Promise<CKRecord> {
+    public func fetchUserRecord(_ container: CKContainer = CKContainer.default()) -> Promise<CKRecord> {
         return container.fetchUserRecordID().then(on: zalgo) { uid -> Promise<CKRecord> in
             return self.fetchRecordWithID(uid)
         }
