@@ -43,13 +43,13 @@ Alternatively, clone PromiseKit and drag and drop its `xcodeproj` into your Xcod
 
 PromiseKit contains Swift, so we engage in an unending battle with Xcode:
 
-| Xcode | Swift | PromiseKit |
-| ----- | ----- | ---------- |
-|   8   |  3.0  |      4     |
-|   8   |  2.3  |      3     |
-|   7   |  2.2  |      3     |
-|   6   |  1.2  |      2     |
-|   *   |  N/A  |      1     |
+| Xcode | Swift | PromiseKit | Release Notes |
+| ----- | ----- | ---------- | ------------- |
+|   8   |  3.0  |      4     | [TODO](http://promisekit.org/news/) |
+|   8   |  2.3  |      3     |   |
+|   7   |  2.2  |      3     |   |
+|   6   |  1.2  |      2     | [2015/05](http://localhost:4000/news/2015/05/PromiseKit-2.0-Released/) |
+|   *   |  N/A  |      1     |   |
 
 PromiseKit 1 is pure Objective-C and thus works with all Xcodes, it is also your only choice if you need to support iOS 7 or below.
 
@@ -64,7 +64,7 @@ We also maintain some branches to aid migrating between Swift versions:
 |  7.1  |  2.1  | 2 | swift-2.0-minimal-changes |
 |  7.0  |  2.0  | 2 | swift-2.0-minimal-changes |
 
-We do **not** backport fixes (mostly) to these migration-branches.
+We mostly do not backport fixes to these migration-branches.
 
 # Support
 
