@@ -61,9 +61,7 @@
 		631B84741D21B80500902234 /* TestNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF16FC1AEAC46E00BE97DD /* TestNSURLConnection.m */; };
 		631B84751D21B80500902234 /* TestNSURLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DFF5F1AFAEB4700465598 /* TestNSURLConnection.swift */; };
 		631B84761D21B80500902234 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F064CA1B31C68D004EDAA1 /* NSURLSession+Promise.swift */; };
-		631B84771D21B80500902234 /* TestNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63877E711B792C680042195F /* TestNSURLSession.swift */; };
 		631B847A1D21B80500902234 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F803CC1AB89A0F00E4DEE1 /* PromiseKit.framework */; };
-		631B84971D21B83D00902234 /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E6A2271D19F4F200E75F1E /* OMGHTTPURLRQ.framework */; };
 		6324DC801D2307C70064FC32 /* TestSLComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B4BB7C1B62D862004FA613 /* TestSLComposeViewController.swift */; };
 		6324DC811D2307C70064FC32 /* TestUIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638AF9431B62B2310045C3E8 /* TestUIImagePickerController.swift */; };
 		63314ADA1AEDDC070071B6F5 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = 63314AD71AEDDC070071B6F5 /* hang.m */; };
@@ -93,7 +91,6 @@
 		63533B391AE57A9300C10972 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F803CC1AB89A0F00E4DEE1 /* PromiseKit.framework */; };
 		635D0D7B1ADDB11400CC0406 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0D7A1ADDB11400CC0406 /* Error.swift */; };
 		635D0D7C1ADDB11400CC0406 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0D7A1ADDB11400CC0406 /* Error.swift */; };
-		635DA0BD1D21EDBF00BEF4D5 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6393A3F81D1A07CC009B1E3A /* OHHTTPStubs.framework */; };
 		6360E29A1D2F0E2F00AAAD2B /* 02_ErrorUnhandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6360E2961D2F0E2F00AAAD2B /* 02_ErrorUnhandlerTests.m */; };
 		6360E29B1D2F0E2F00AAAD2B /* 02_ErrorUnhandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360E2971D2F0E2F00AAAD2B /* 02_ErrorUnhandlerTests.swift */; };
 		6360E29C1D2F0E2F00AAAD2B /* Infrastructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360E2991D2F0E2F00AAAD2B /* Infrastructure.swift */; };
@@ -208,7 +205,11 @@
 		6393A3C91D1A05D0009B1E3A /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F803CC1AB89A0F00E4DEE1 /* PromiseKit.framework */; };
 		639A12711AB9F941002E5C24 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A12701AB9F941002E5C24 /* Promise+Properties.swift */; };
 		639A12721AB9F997002E5C24 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A12701AB9F941002E5C24 /* Promise+Properties.swift */; };
+		639AF5AB1D4959A300BB521E /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 639E76151D494B450029812D /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		639AF5AC1D4959A300BB521E /* OMGHTTPURLRQ.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 639E76131D494B2F0029812D /* OMGHTTPURLRQ.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		639D55101D432CE20035D578 /* CBCentralManager+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912DEE91C728B6800BB3C37 /* CBCentralManager+Promise.swift */; };
+		639E76141D494B2F0029812D /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E76131D494B2F0029812D /* OMGHTTPURLRQ.framework */; };
+		639E76161D494B450029812D /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639E76151D494B450029812D /* OHHTTPStubs.framework */; };
 		63A1576B1ABB32EB0002A421 /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A1576A1ABB32EB0002A421 /* AnyPromise.swift */; };
 		63A1576C1ABB34250002A421 /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A1576A1ABB32EB0002A421 /* AnyPromise.swift */; };
 		63A157721ABB59D00002A421 /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A157711ABB59D00002A421 /* AnyPromise.m */; };
@@ -216,6 +217,7 @@
 		63A157741ABB59D80002A421 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A157701ABB59490002A421 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A157751ABB59DC0002A421 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A157701ABB59490002A421 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63A60E201AFD795B00C4E692 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A60E1F1AFD795B00C4E692 /* after.m */; };
+		63A9EDEB1D49643C0078759A /* TestNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63877E711B792C680042195F /* TestNSURLSession.swift */; };
 		63B4776E1D3040DE006D8AF8 /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B4776D1D3040DE006D8AF8 /* Promise+AnyPromise.swift */; };
 		63B4776F1D3040DE006D8AF8 /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B4776D1D3040DE006D8AF8 /* Promise+AnyPromise.swift */; };
 		63B477701D3040DE006D8AF8 /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B4776D1D3040DE006D8AF8 /* Promise+AnyPromise.swift */; };
@@ -296,13 +298,6 @@
 			remoteGlobalIDString = 63F803C21AB89A0F00E4DEE1;
 			remoteInfo = PMKmacOS;
 		};
-		631B84951D21B83200902234 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 63F804261AB8AAA300E4DEE1;
-			remoteInfo = OMGOSX;
-		};
 		631B84981D21BCE900902234 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63F8039A1AB87A8200E4DEE1 /* Project object */;
@@ -317,33 +312,12 @@
 			remoteGlobalIDString = 63F803A21AB87A8200E4DEE1;
 			remoteInfo = PMKiOS;
 		};
-		634B5D2A1D3FF2FB007C37E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 43EDF3D11BCC3C0900159436;
-			remoteInfo = OMGwatchOS;
-		};
-		634B5D2C1D3FF2FB007C37E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E18CAC721C56CABC0043C367;
-			remoteInfo = OMGtvOS;
-		};
 		63533B3A1AE57A9300C10972 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63F8039A1AB87A8200E4DEE1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 63F803C21AB89A0F00E4DEE1;
 			remoteInfo = PMKmacOS;
-		};
-		635DA0BB1D21EDB200BEF4D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 095981C119806A7900807DBE;
-			remoteInfo = "OHHTTPStubs Mac Framework";
 		};
 		638E0EDC1AEF16530052E28F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -358,139 +332,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 63F803C21AB89A0F00E4DEE1;
 			remoteInfo = PMKmacOS;
-		};
-		6393A3EF1D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 09110A4119805F4800D175E4;
-			remoteInfo = "OHHTTPStubs iOS StaticLib";
-		};
-		6393A3F11D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 09110A5119805F4800D175E4;
-			remoteInfo = "OHHTTPStubs iOS Lib Tests";
-		};
-		6393A3F31D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 725CD99B1A9EB65100F84C8B;
-			remoteInfo = "OHHTTPStubs iOS Framework";
-		};
-		6393A3F51D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 093442F91B80EC4A00A91535;
-			remoteInfo = "OHHTTPStubs iOS Fmk Tests";
-		};
-		6393A3F71D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 095981C219806A7900807DBE;
-			remoteInfo = "OHHTTPStubs Mac Framework";
-		};
-		6393A3F91D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 095981D219806A7900807DBE;
-			remoteInfo = "OHHTTPStubs Mac Tests";
-		};
-		6393A3FB1D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EAA436A51BE1598D000E9E99;
-			remoteInfo = "OHHTTPStubs tvOS Framework";
-		};
-		6393A3FD1D1A07CC009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EA100AB71BE15BE400129352;
-			remoteInfo = "OHHTTPStubs tvOS Fmk Tests";
-		};
-		6393A40D1D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 81ED94291BE147CF00795F05;
-			remoteInfo = "Bolts-iOS";
-		};
-		6393A40F1D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D5D7DD31BE3CE8200FD67C7;
-			remoteInfo = "Bolts-iOS-Dynamic";
-		};
-		6393A4111D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 81ED946E1BE14B5200795F05;
-			remoteInfo = "Bolts-OSX";
-		};
-		6393A4131D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F5AFCA021BA752750076E927;
-			remoteInfo = "Bolts-tvOS";
-		};
-		6393A4151D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 81E94D6A1C2B8BF200A6291E;
-			remoteInfo = "Bolts-tvOS-Dynamic";
-		};
-		6393A4171D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8178F99C1BB0F87700AD289D;
-			remoteInfo = "Bolts-watchOS";
-		};
-		6393A4191D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 819573F11C2B8ECB00BFCA39;
-			remoteInfo = "Bolts-watchOS-Dynamic";
-		};
-		6393A41B1D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8E8C8EE917F23D1D00E3F1C7;
-			remoteInfo = "BoltsTests-iOS";
-		};
-		6393A41D1D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8E8C8F1917F241DA00E3F1C7;
-			remoteInfo = "BoltsTests-OSX";
-		};
-		6393A41F1D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F5AFCA131BA752770076E927;
-			remoteInfo = "BoltsTests-tvOS";
-		};
-		6393A4211D1A07D1009B1E3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1EC3016018CDAA8400D06D07;
-			remoteInfo = BoltsTestUI;
 		};
 		63CA144A1AE9FBD000223904 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -520,27 +361,6 @@
 			remoteGlobalIDString = 63F803C21AB89A0F00E4DEE1;
 			remoteInfo = PMKmacOS;
 		};
-		63E6A2241D19F4F200E75F1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 63EDFE721A7FFD0E0030F974;
-			remoteInfo = OMGiOS;
-		};
-		63E6A2261D19F4F200E75F1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 63F804341AB8AAA300E4DEE1;
-			remoteInfo = OMGOSX;
-		};
-		63E6A2281D19F4F200E75F1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 63EDFE7D1A7FFD0E0030F974;
-			remoteInfo = OMGTest;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -553,6 +373,17 @@
 				6307B67B1B615BB60003AC3A /* PromiseKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639AF5AA1D49599200BB521E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				639AF5AB1D4959A300BB521E /* OHHTTPStubs.framework in CopyFiles */,
+				639AF5AC1D4959A300BB521E /* OMGHTTPURLRQ.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -690,9 +521,9 @@
 		6391FD241B62E0FF00671798 /* TestUIImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestUIImagePickerController.swift; path = Categories/TestUIImagePickerController.swift; sourceTree = "<group>"; };
 		6391FD291B62EC6700671798 /* utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = utils.swift; path = Tests/UITests/utils.swift; sourceTree = SOURCE_ROOT; };
 		6393A3D01D1A05D0009B1E3A /* PMKCategories.Bolts.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMKCategories.Bolts.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OHHTTPStubs.xcodeproj; path = Vendor/OHHTTPStubs/OHHTTPStubs/OHHTTPStubs.xcodeproj; sourceTree = "<group>"; };
-		6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Bolts.xcodeproj; path = Vendor/Bolts/Bolts.xcodeproj; sourceTree = "<group>"; };
 		639A12701AB9F941002E5C24 /* Promise+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Promise+Properties.swift"; path = "Sources/Promise+Properties.swift"; sourceTree = "<group>"; };
+		639E76131D494B2F0029812D /* OMGHTTPURLRQ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMGHTTPURLRQ.framework; path = Carthage/Build/Mac/OMGHTTPURLRQ.framework; sourceTree = "<group>"; };
+		639E76151D494B450029812D /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		63A1576A1ABB32EB0002A421 /* AnyPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
 		63A157701ABB59490002A421 /* PromiseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = SOURCE_ROOT; };
 		63A157711ABB59D00002A421 /* AnyPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
@@ -741,7 +572,6 @@
 		63E299781AFDCE5600921143 /* TestUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestUIViewController.m; path = Categories/TestUIViewController.m; sourceTree = "<group>"; };
 		63E2A8091D2F199100B13391 /* Infrastructure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Infrastructure.m; path = CorePromise/Infrastructure.m; sourceTree = "<group>"; };
 		63E36A181B791BB2009BAFBF /* URLDataPromise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLDataPromise.swift; path = Sources/URLDataPromise.swift; sourceTree = "<group>"; };
-		63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OMGHTTPURLRQ.xcodeproj; path = Vendor/OMGHTTPURLRQ/OMGHTTPURLRQ.xcodeproj; sourceTree = "<group>"; };
 		63F064CA1B31C68D004EDAA1 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		63F0A9A91D357C6300F34D5C /* Zalgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Zalgo.swift; path = Sources/Zalgo.swift; sourceTree = "<group>"; };
 		63F7A4E91D34280900765FF3 /* Promise+Adapters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Promise+Adapters.swift"; path = "Sources/Promise+Adapters.swift"; sourceTree = "<group>"; };
@@ -790,9 +620,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639E76161D494B450029812D /* OHHTTPStubs.framework in Frameworks */,
 				631B847A1D21B80500902234 /* PromiseKit.framework in Frameworks */,
-				631B84971D21B83D00902234 /* OMGHTTPURLRQ.framework in Frameworks */,
-				635DA0BD1D21EDBF00BEF4D5 /* OHHTTPStubs.framework in Frameworks */,
+				639E76141D494B2F0029812D /* OMGHTTPURLRQ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1197,39 +1027,6 @@
 			name = TestFoundation;
 			sourceTree = "<group>";
 		};
-		6393A3E51D1A07CC009B1E3A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6393A3F01D1A07CC009B1E3A /* libOHHTTPStubs.a */,
-				6393A3F21D1A07CC009B1E3A /* OHHTTPStubs iOS Lib Tests.xctest */,
-				6393A3F41D1A07CC009B1E3A /* OHHTTPStubs.framework */,
-				6393A3F61D1A07CC009B1E3A /* OHHTTPStubs iOS Fmk Tests.xctest */,
-				6393A3F81D1A07CC009B1E3A /* OHHTTPStubs.framework */,
-				6393A3FA1D1A07CC009B1E3A /* OHHTTPStubs Mac Tests.xctest */,
-				6393A3FC1D1A07CC009B1E3A /* OHHTTPStubs.framework */,
-				6393A3FE1D1A07CC009B1E3A /* OHHTTPStubs tvOS Fmk Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6393A4001D1A07D1009B1E3A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6393A40E1D1A07D1009B1E3A /* Bolts.framework */,
-				6393A4101D1A07D1009B1E3A /* Bolts.framework */,
-				6393A4121D1A07D1009B1E3A /* Bolts.framework */,
-				6393A4141D1A07D1009B1E3A /* Bolts.framework */,
-				6393A4161D1A07D1009B1E3A /* Bolts.framework */,
-				6393A4181D1A07D1009B1E3A /* Bolts.framework */,
-				6393A41A1D1A07D1009B1E3A /* Bolts.framework */,
-				6393A41C1D1A07D1009B1E3A /* BoltsTests-iOS.xctest */,
-				6393A41E1D1A07D1009B1E3A /* BoltsTests-OSX.xctest */,
-				6393A4201D1A07D1009B1E3A /* BoltsTests-tvOS.xctest */,
-				6393A4221D1A07D1009B1E3A /* BoltsTestUI.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		6398C8991AE985D9006E06E1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -1276,19 +1073,11 @@
 			path = "A+";
 			sourceTree = "<group>";
 		};
-		63BD345B1D19FFA600F62BBB /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */,
-				6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */,
-				63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */,
-			);
-			name = Vendor;
-			sourceTree = "<group>";
-		};
 		63CA14C41AEA9E0C00223904 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				639E76151D494B450029812D /* OHHTTPStubs.framework */,
+				639E76131D494B2F0029812D /* OMGHTTPURLRQ.framework */,
 				63F803CC1AB89A0F00E4DEE1 /* PromiseKit.framework */,
 				63533B331AE57A9300C10972 /* PMKA+.xctest */,
 				631483F01D2EE76200731B01 /* PMKBridging.xctest */,
@@ -1366,18 +1155,6 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		63E6A21F1D19F4F200E75F1E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				63E6A2251D19F4F200E75F1E /* OMGHTTPURLRQ.framework */,
-				63E6A2271D19F4F200E75F1E /* OMGHTTPURLRQ.framework */,
-				63E6A2291D19F4F200E75F1E /* OMGTest.xctest */,
-				634B5D2B1D3FF2FB007C37E9 /* OMGHTTPURLRQ.framework */,
-				634B5D2D1D3FF2FB007C37E9 /* OMGHTTPURLRQ.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		63F803991AB87A8200E4DEE1 = {
 			isa = PBXGroup;
 			children = (
@@ -1400,7 +1177,6 @@
 				63CA14C41AEA9E0C00223904 /* macOS */,
 				43EA5FF21C5AC38C000BAEA7 /* tvOS */,
 				63CD9A821BB104F6008D916F /* watchOS */,
-				63BD345B1D19FFA600F62BBB /* Vendor */,
 				63F803A71AB87A8200E4DEE1 /* Info.plist */,
 				638EC9541D2C5191000E7D2C /* PromiseKit.podspec */,
 				638EC93E1D2C5085000E7D2C /* PromiseKit.modulemap */,
@@ -1513,13 +1289,12 @@
 			buildPhases = (
 				631B84701D21B80500902234 /* Sources */,
 				631B84791D21B80500902234 /* Frameworks */,
+				639AF5AA1D49599200BB521E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				631B846E1D21B80500902234 /* PBXTargetDependency */,
-				631B84961D21B83200902234 /* PBXTargetDependency */,
-				635DA0BC1D21EDB200BEF4D5 /* PBXTargetDependency */,
 			);
 			name = PMKTests/Categories/OMG;
 			productName = PMKCatTests;
@@ -1760,20 +1535,6 @@
 			mainGroup = 63F803991AB87A8200E4DEE1;
 			productRefGroup = 63F803A41AB87A8200E4DEE1 /* … */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6393A4001D1A07D1009B1E3A /* Products */;
-					ProjectRef = 6393A3FF1D1A07D1009B1E3A /* Bolts.xcodeproj */;
-				},
-				{
-					ProductGroup = 6393A3E51D1A07CC009B1E3A /* Products */;
-					ProjectRef = 6393A3E41D1A07CC009B1E3A /* OHHTTPStubs.xcodeproj */;
-				},
-				{
-					ProductGroup = 63E6A21F1D19F4F200E75F1E /* Products */;
-					ProjectRef = 63E6A21E1D19F4F200E75F1E /* OMGHTTPURLRQ.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				63F803A21AB87A8200E4DEE1 /* PMKiOS */,
@@ -1793,177 +1554,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		634B5D2B1D3FF2FB007C37E9 /* OMGHTTPURLRQ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OMGHTTPURLRQ.framework;
-			remoteRef = 634B5D2A1D3FF2FB007C37E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		634B5D2D1D3FF2FB007C37E9 /* OMGHTTPURLRQ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OMGHTTPURLRQ.framework;
-			remoteRef = 634B5D2C1D3FF2FB007C37E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3F01D1A07CC009B1E3A /* libOHHTTPStubs.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libOHHTTPStubs.a;
-			remoteRef = 6393A3EF1D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3F21D1A07CC009B1E3A /* OHHTTPStubs iOS Lib Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "OHHTTPStubs iOS Lib Tests.xctest";
-			remoteRef = 6393A3F11D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3F41D1A07CC009B1E3A /* OHHTTPStubs.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OHHTTPStubs.framework;
-			remoteRef = 6393A3F31D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3F61D1A07CC009B1E3A /* OHHTTPStubs iOS Fmk Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "OHHTTPStubs iOS Fmk Tests.xctest";
-			remoteRef = 6393A3F51D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3F81D1A07CC009B1E3A /* OHHTTPStubs.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OHHTTPStubs.framework;
-			remoteRef = 6393A3F71D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3FA1D1A07CC009B1E3A /* OHHTTPStubs Mac Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "OHHTTPStubs Mac Tests.xctest";
-			remoteRef = 6393A3F91D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3FC1D1A07CC009B1E3A /* OHHTTPStubs.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OHHTTPStubs.framework;
-			remoteRef = 6393A3FB1D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A3FE1D1A07CC009B1E3A /* OHHTTPStubs tvOS Fmk Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "OHHTTPStubs tvOS Fmk Tests.xctest";
-			remoteRef = 6393A3FD1D1A07CC009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A40E1D1A07D1009B1E3A /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 6393A40D1D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A4101D1A07D1009B1E3A /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 6393A40F1D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A4121D1A07D1009B1E3A /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 6393A4111D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A4141D1A07D1009B1E3A /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 6393A4131D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A4161D1A07D1009B1E3A /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 6393A4151D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A4181D1A07D1009B1E3A /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 6393A4171D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A41A1D1A07D1009B1E3A /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = 6393A4191D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A41C1D1A07D1009B1E3A /* BoltsTests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "BoltsTests-iOS.xctest";
-			remoteRef = 6393A41B1D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A41E1D1A07D1009B1E3A /* BoltsTests-OSX.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "BoltsTests-OSX.xctest";
-			remoteRef = 6393A41D1D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A4201D1A07D1009B1E3A /* BoltsTests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "BoltsTests-tvOS.xctest";
-			remoteRef = 6393A41F1D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6393A4221D1A07D1009B1E3A /* BoltsTestUI.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = BoltsTestUI.app;
-			remoteRef = 6393A4211D1A07D1009B1E3A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		63E6A2251D19F4F200E75F1E /* OMGHTTPURLRQ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OMGHTTPURLRQ.framework;
-			remoteRef = 63E6A2241D19F4F200E75F1E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		63E6A2271D19F4F200E75F1E /* OMGHTTPURLRQ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OMGHTTPURLRQ.framework;
-			remoteRef = 63E6A2261D19F4F200E75F1E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		63E6A2291D19F4F200E75F1E /* OMGTest.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OMGTest.xctest;
-			remoteRef = 63E6A2281D19F4F200E75F1E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		43EF78A41C5AA12B00BCD8FB /* Resources */ = {
@@ -2086,11 +1676,11 @@
 			files = (
 				631B84721D21B80500902234 /* NSURLConnection+AnyPromise.m in Sources */,
 				631B84731D21B80500902234 /* NSURLConnection+Promise.swift in Sources */,
-				63B722481D49289C004313E6 /* NSURLSession+AnyPromise.m in Sources */,
 				631B84741D21B80500902234 /* TestNSURLConnection.m in Sources */,
 				631B84751D21B80500902234 /* TestNSURLConnection.swift in Sources */,
+				63B722481D49289C004313E6 /* NSURLSession+AnyPromise.m in Sources */,
 				631B84761D21B80500902234 /* NSURLSession+Promise.swift in Sources */,
-				631B84771D21B80500902234 /* TestNSURLSession.swift in Sources */,
+				63A9EDEB1D49643C0078759A /* TestNSURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2391,11 +1981,6 @@
 			target = 63F803C21AB89A0F00E4DEE1 /* PMKmacOS */;
 			targetProxy = 631B846F1D21B80500902234 /* PBXContainerItemProxy */;
 		};
-		631B84961D21B83200902234 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OMGOSX;
-			targetProxy = 631B84951D21B83200902234 /* PBXContainerItemProxy */;
-		};
 		631B84991D21BCE900902234 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63F803C21AB89A0F00E4DEE1 /* PMKmacOS */;
@@ -2410,11 +1995,6 @@
 			isa = PBXTargetDependency;
 			target = 63F803C21AB89A0F00E4DEE1 /* PMKmacOS */;
 			targetProxy = 63533B3A1AE57A9300C10972 /* PBXContainerItemProxy */;
-		};
-		635DA0BC1D21EDB200BEF4D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OHHTTPStubs Mac Framework";
-			targetProxy = 635DA0BB1D21EDB200BEF4D5 /* PBXContainerItemProxy */;
 		};
 		638E0EDD1AEF16530052E28F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2576,6 +2156,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = PMKCategories.OMG;
 				SDKROOT = macosx;
@@ -2592,6 +2176,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = PMKCategories.OMG;

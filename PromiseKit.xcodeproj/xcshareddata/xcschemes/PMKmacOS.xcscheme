@@ -83,9 +83,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "631483F91D2EF66400731B01"
-               BuildableName = "ErrorUnhandler.xctest"
-               BlueprintName = "PMKTests/ErrorUnhandler"
+               BlueprintIdentifier = "631B846D1D21B80500902234"
+               BuildableName = "PMKCategories.OMG.xctest"
+               BlueprintName = "PMKTests/Categories/OMG"
                ReferencedContainer = "container:PromiseKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
