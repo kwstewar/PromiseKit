@@ -1,4 +1,4 @@
-![PromiseKit](http://promisekit.org/public/img/logo.png)
+![PromiseKit](http://promisekit.org/public/img/logo-tight.png)
 
 Modern development is highly asynchronous: isn’t it about time we had tools that made programming asynchronously powerful, easy and delightful?
 
